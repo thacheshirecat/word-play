@@ -14,8 +14,10 @@ $("#sentance-form").submit(function(event) {
     }
   });
 
-  newWords.toString(" ");
-  $(".simple").text(newWords);
+  var simpleSentance = newWords.join(" ");
+  var reverseWords = simpleSentance.split(" ").reverse().join(" ");
+
+  $(".simple").text(reverseWords);
   $("#sentance-scramble").show();
 
 });
