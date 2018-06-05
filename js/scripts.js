@@ -14,8 +14,7 @@ $("#sentance-form").submit(function(event) {
     }
   });
 
-  var simpleSentance = newWords.join(" ");
-  var reverseWords = simpleSentance.split(" ").reverse().join(" ");
+  var reverseWords = newWords.reverse().join(" ");
 
   $(".simple").text(reverseWords);
   $("#sentance-scramble").show();
